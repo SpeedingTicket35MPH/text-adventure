@@ -41,8 +41,8 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     height: 23em;
-    width: 50%;
-
+    width: 40%;
+    justify-content: space-around;
 }
 
 #settings {
