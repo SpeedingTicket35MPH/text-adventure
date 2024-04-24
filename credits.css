@@ -11,7 +11,7 @@ body {
     font-family: "Jersey 10", sans-serif;
     background-image: url(New\ Piskel-1.png\ \(4\).png);
     background-size: var(--backgroundSize);
-    animation: movingBackground 5s linear infinite;
+    animation: movingBackground 10s linear infinite;
 }
 
 :root {
@@ -25,6 +25,9 @@ body {
         background-image: url(blue-crab-removebg-preview.png);
         background-position: -50% -90%;
         background-attachment: rotate(0deg);
+        transform: rotate(0deg);
+        transform: skewY(-1deg);
+        transform: scale(0.5);
     }
 
     33% {
@@ -35,14 +38,19 @@ body {
 
     66% {
         background-color: rgba(0, 68, 255, 0.78);
-        background-image: url(blue-crab-removebg-preview.png);
+        background-image: url(victim.png);
         transform: rotate(0deg);
+        transform: translateX(8);
     }
 
     100% {
         background-color: rgba(255, 0, 0, 0.678);
         background-position: var(--backgroundSize) var(--backgroundSize);
         transform: rotate(360deg);
+        background-image: url(blue-crab-removebg-preview.png);
+        transform: skewY(-10deg);
+        transform: rotate(360deg);
+        transform: scale(-10%);
     }
 }
 
@@ -157,3 +165,4 @@ body {
         border-color: rgb(255, 66, 66);
     }
 }
+
