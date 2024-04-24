@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+10+Charted&display=swap');
 
 body {
-    margin-top: 25em;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,12 +10,11 @@ body {
     font-family: "Jersey 10", sans-serif;
     background-image: url(confusedJackie.png);
     background-size: var(--backgroundSize);
-    animation: movingBackground 5s linear infinite;
+    animation: movingBackground 2s linear infinite;
 }
 
-
 :root {
-    --backgroundSize: 720px;
+    --backgroundSize: 120px;
     filter: brightness(100%);
 }
 
@@ -25,10 +24,9 @@ body {
     }
 
     to {
-        background-position: 0 -105%;
+        background-position: var(--backgroundSize) var(--backgroundSize);
     }
 }
-
 
 #mainMenu {
     display: flex;
@@ -61,6 +59,7 @@ body {
 }
 
 #settings {
+    margin: 13em;
     font-size: xx-large;
     background-color: black;
     width: 30%;
@@ -102,4 +101,22 @@ body {
         transform: skewY(-10deg);
         transform: rotate(360deg);
     }
+}
+
+.cred {
+    color: white;
+}
+
+#creditBox {
+    margin: 7em;
+    font-size: xx-large;
+    background-color: black;
+    width: 30%;
+    height: 30%;
+    color: rgb(255, 0, 0);
+    padding-left: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid red;
 }

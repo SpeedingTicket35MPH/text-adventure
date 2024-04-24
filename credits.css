@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+10+Charted&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-family: "Jersey 10", sans-serif;
+    background-image: url(New\ Piskel-1.png\ \(4\).png);
+    background-size: var(--backgroundSize);
+    animation: movingBackground 5s linear infinite;
+}
+
+:root {
+    --backgroundSize: 120px;
+    filter: brightness(100%);
+}
+
+@keyframes movingBackground {
+    0% {
+        background-color: rgba(255, 0, 0, 0.678);
+        background-image: url(blue-crab-removebg-preview.png);
+        background-position: -50% -90%;
+        background-attachment: rotate(0deg);
+    }
+
+    33% {
+        background-color: rgb(74, 255, 74);
+        background-image: url(confusedJackie.png);
+        transform: rotate(-360deg);
+    }
+
+    66% {
+        background-color: rgba(0, 68, 255, 0.78);
+        background-image: url(blue-crab-removebg-preview.png);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        background-color: rgba(255, 0, 0, 0.678);
+        background-position: var(--backgroundSize) var(--backgroundSize);
+        transform: rotate(360deg);
+    }
+}
+
+#mainMenu {
+    display: flex;
+}
+
+.mnuBtn {
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: xx-large;
+    width: 25%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Jersey 10", sans-serif;
+    border: 2px solid white;
+}
+
+.mnuBtn:hover {
+    text-decoration: underline;
+}
+
+.menuButton {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 23em;
+    width: 40%;
+    justify-content: space-around;
+}
+
+#settings {
+    margin: 13em;
+    font-size: xx-large;
+    background-color: black;
+    width: 30%;
+    color: rgb(255, 0, 0);
+    padding-left: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid red;
+}
+
+.copyright {
+    color: white;
+    opacity: 55%;
+}
+
+#titleScreen {
+    opacity: 50%;
+    animation: rotation 5s infinite linear;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+        transform: skewY(-1deg);
+    }
+
+    50% {
+        transform: scale(-0.2);
+    }
+
+    70% {
+        transform: translateX(8);
+    }
+
+    to {
+        transform: skewY(-10deg);
+        transform: rotate(360deg);
+    }
+}
+
+.cred {
+    color: white;
+}
+
+#creditBox {
+    margin: 7em;
+    font-size: xx-large;
+    background-color: black;
+    width: 30%;
+    height: 30%;
+    color: rgb(255, 0, 0);
+    padding-left: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid transparent;
+    animation: animateBorder 0.33s infinite;
+}
+
+@keyframes animateBorder {
+    0% {
+        border-color: rgb(255, 66, 66);
+    }
+
+    33% {
+        border-color: rgb(0, 255, 0);
+    }
+
+    66% {
+        border-color: rgb(98, 190, 255);
+    }
+
+    100% {
+        border-color: rgb(255, 66, 66);
+    }
+}
