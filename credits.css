@@ -11,47 +11,54 @@ body {
     font-family: "Jersey 10", sans-serif;
     background-image: url(New\ Piskel-1.png\ \(4\).png);
     background-size: var(--backgroundSize);
-    animation: movingBackground 10s linear infinite;
+    animation: movingBackground 2s linear infinite;
 }
 
 :root {
-    --backgroundSize: 120px;
+    --backgroundSize: 144px;
     filter: brightness(100%);
 }
 
 @keyframes movingBackground {
-    0% {
-        background-color: rgba(255, 0, 0, 0.678);
-        background-image: url(blue-crab-removebg-preview.png);
-        background-position: -50% -90%;
-        background-attachment: rotate(0deg);
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: var(--backgroundSize) var(--backgroundSize);
+    }
+    /* /* 0% {
+        /* background-color: rgba(255, 0, 0, 0.678); */
+        /* background-image: url(blue-crab-removebg-preview.png);
+        background-position: -50% -90%; */
+        /* background-attachment: rotate(0deg);
         transform: rotate(0deg);
         transform: skewY(-1deg);
-        transform: scale(0.5);
-    }
+        transform: scale(0.5); */
+    /* } */
 
-    33% {
-        background-color: rgb(74, 255, 74);
-        background-image: url(confusedJackie.png);
-        transform: rotate(-360deg);
-    }
+    /* 33% { */
+        /* background-color: rgb(74, 255, 74); */
+        /* background-image: url(confusedJackie.png); */
+        /* transform: rotate(-360deg); */
+    /* }
 
-    66% {
-        background-color: rgba(0, 68, 255, 0.78);
-        background-image: url(victim.png);
-        transform: rotate(0deg);
-        transform: translateX(8);
-    }
+    66% { */
+        /* background-color: rgba(0, 68, 255, 0.78); */
+        /* background-image: url(victim.png); */
+        /* transform: rotate(0deg);
+        transform: translateX(8); */
+    /* }
 
-    100% {
-        background-color: rgba(255, 0, 0, 0.678);
-        background-position: var(--backgroundSize) var(--backgroundSize);
+    100% { */
+        /* background-color: rgba(255, 0, 0, 0.678); */
+        /* background-position: var(--backgroundSize) var(--backgroundSize);
+        background-image: url(blue-crab-removebg-preview.png); */
+        /* transform: skewY(-10deg);
         transform: rotate(360deg);
-        background-image: url(blue-crab-removebg-preview.png);
-        transform: skewY(-10deg);
-        transform: rotate(360deg);
-        transform: scale(-10%);
-    }
+        transform: scale(-10%); */        
+        /* transform: rotate(360deg); */
+    /* } */ 
 }
 
 #mainMenu {
@@ -136,7 +143,7 @@ body {
 #creditBox {
     margin: 7em;
     font-size: xx-large;
-    background-color: black;
+    background-color: rgb(0, 0, 0, 0.5);
     width: 30%;
     height: 30%;
     color: rgb(255, 0, 0);
@@ -144,8 +151,8 @@ body {
     padding-bottom: 1em;
     display: flex;
     flex-direction: column;
-    border: 5px solid transparent;
-    animation: animateBorder 0.33s infinite;
+    border: 10px solid transparent;
+    animation: animateBorder 1s infinite;
 }
 
 @keyframes animateBorder {
