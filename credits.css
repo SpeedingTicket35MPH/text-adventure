@@ -27,38 +27,39 @@ body {
     to {
         background-position: var(--backgroundSize) var(--backgroundSize);
     }
+
     /* /* 0% {
         /* background-color: rgba(255, 0, 0, 0.678); */
-        /* background-image: url(blue-crab-removebg-preview.png);
+    /* background-image: url(blue-crab-removebg-preview.png);
         background-position: -50% -90%; */
-        /* background-attachment: rotate(0deg);
+    /* background-attachment: rotate(0deg);
         transform: rotate(0deg);
         transform: skewY(-1deg);
         transform: scale(0.5); */
     /* } */
 
     /* 33% { */
-        /* background-color: rgb(74, 255, 74); */
-        /* background-image: url(confusedJackie.png); */
-        /* transform: rotate(-360deg); */
+    /* background-color: rgb(74, 255, 74); */
+    /* background-image: url(confusedJackie.png); */
+    /* transform: rotate(-360deg); */
     /* }
 
     66% { */
-        /* background-color: rgba(0, 68, 255, 0.78); */
-        /* background-image: url(victim.png); */
-        /* transform: rotate(0deg);
+    /* background-color: rgba(0, 68, 255, 0.78); */
+    /* background-image: url(victim.png); */
+    /* transform: rotate(0deg);
         transform: translateX(8); */
     /* }
 
     100% { */
-        /* background-color: rgba(255, 0, 0, 0.678); */
-        /* background-position: var(--backgroundSize) var(--backgroundSize);
+    /* background-color: rgba(255, 0, 0, 0.678); */
+    /* background-position: var(--backgroundSize) var(--backgroundSize);
         background-image: url(blue-crab-removebg-preview.png); */
-        /* transform: skewY(-10deg);
+    /* transform: skewY(-10deg);
         transform: rotate(360deg);
-        transform: scale(-10%); */        
-        /* transform: rotate(360deg); */
-    /* } */ 
+        transform: scale(-10%); */
+    /* transform: rotate(360deg); */
+    /* } */
 }
 
 #mainMenu {
@@ -140,8 +141,31 @@ body {
     color: white;
 }
 
+.credTitle {
+    display: flex;
+    justify-content: center;
+    animation: animateText 0.5s infinite;
+}
+
+@keyframes animateText {
+    0% {
+        color: rgb(255, 66, 66);
+    }
+
+    33% {
+        color: rgb(0, 255, 0);
+    }
+
+    66% {
+        color: rgb(98, 190, 255);
+    }
+
+    100% {
+        color: rgb(255, 66, 66);
+    }
+}
+
 #creditBox {
-    margin: 7em;
     font-size: xx-large;
     background-color: rgb(0, 0, 0, 0.5);
     width: 30%;
@@ -172,4 +196,3 @@ body {
         border-color: rgb(255, 66, 66);
     }
 }
-

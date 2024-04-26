@@ -20,6 +20,8 @@ img {
 }
 
 p {
+    margin-left: 16em;
+    margin-right:16em;
     font-size: xx-large;
     display: flex;
     justify-content: center;
