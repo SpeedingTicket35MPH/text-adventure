@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+10+Charted&display=swap');
+
+
+body {
+    font-family: "Jersey 10", sans-serif;
+    margin: 2em;
+    background-image: url(fleshWall.png);
+    background-size: var(--backgroundSize);
+    animation: movingBackground 2s linear infinite;
+}
+
+:root {
+    --backgroundSize: 240px;
+    filter: brightness(100%);
+}
+
+@keyframes movingBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: var(--backgroundSize) var(--backgroundSize);
+    }
+}
+
+#graphic {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+
+img {
+    width: auto;
+    height: 30em;
+    border: 3px solid red;
+}
+
+p {
+    margin-left: 16em;
+    margin-right: 16em;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    color: lightgray;
+}
+
+#options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 7em;
+    width: auto;
+}
+
+.mnuBtn {
+    font-size: xx-large;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: "Jersey 10", sans-serif;
+}
+
+button {
+    border-color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 3px 1em
+}
+
+button:hover {
+    border-color: red;
+}
